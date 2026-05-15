@@ -39,4 +39,4 @@ Allow: /
 User-agent: FacebookBot
 Allow: /
 
-Sitemap: https://dndanimeminiatures.com/sitemap.xml
+Sitemap: https://www.dndanimeminiatures.com/sitemap.xml
