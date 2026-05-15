@@ -9,9 +9,9 @@
 <meta name="keywords" content="dnd anime miniature, dnd anime miniatures, anime dnd minis, anime miniature stl, dnd miniature stl, anime miniatures for dnd, one piece stl, one piece dnd miniature, luffy stl, zoro stl, nami stl, tabletop miniature stl, 3d print mini, 32mm miniature stl, anime stl, fan art miniature">
 <link rel="canonical" href="https://dndanimeminiatures.com/">
 
-<link rel="icon" type="image/png" href="images/logo.png">
-<link rel="apple-touch-icon" href="images/logo.png">
-<link rel="shortcut icon" href="images/logo.png">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<link rel="apple-touch-icon" href="images/favicon.png">
+<link rel="shortcut icon" href="images/favicon.png">
 
 <!-- Verification (replace content with actual codes after signing up) -->
 <meta name="google-site-verification" content="REPLACE_WITH_GOOGLE_SEARCH_CONSOLE_TOKEN">
@@ -94,7 +94,20 @@ img { display: block; max-width: 100%; height: auto; }
 .feature__icon { font-size: 24px; margin-bottom: 8px; }
 .feature h3 { font-size: 16px; margin-bottom: 4px; }
 .feature p { font-size: 14px; color: var(--text-dim); }
-.section { max-width: var(--max); margin: 0 auto; padding: 60px 20px; scroll-margin-top: 70px; }
+.section { max-width: var(--max); margin: 0 auto; padding: 60px 20px; scroll-margin-top: 160px; }
+@media (max-width: 700px) { .section { scroll-margin-top: 130px; } }
+
+/* Quick nav chips — sticky horizontal scroll */
+.quicknav { position: sticky; top: 100px; z-index: 40; background: #fff; border-bottom: 1px solid #e5e5e5; box-shadow: 0 1px 6px rgba(0,0,0,0.04); }
+@media (max-width: 700px) { .quicknav { top: 68px; } }
+.quicknav__inner { max-width: var(--max); margin: 0 auto; padding: 12px 16px; display: flex; gap: 8px; overflow-x: auto; scroll-behavior: smooth; -webkit-overflow-scrolling: touch; scrollbar-width: thin; scrollbar-color: var(--accent) transparent; }
+.quicknav__inner::-webkit-scrollbar { height: 4px; }
+.quicknav__inner::-webkit-scrollbar-track { background: transparent; }
+.quicknav__inner::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 2px; }
+.quicknav__chip { flex-shrink: 0; padding: 8px 16px; background: #f3f4f6; border-radius: 999px; font-size: 13px; font-weight: 600; color: #1a1f2e; white-space: nowrap; transition: all .15s; border: 1px solid transparent; }
+.quicknav__chip:hover { background: var(--accent); color: #fff; border-color: var(--accent); transform: translateY(-1px); }
+.quicknav__chip--first { background: #1a1f2e; color: #fff; }
+.quicknav__chip--first:hover { background: var(--accent); }
 .section__head { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 24px; flex-wrap: wrap; gap: 8px; border-bottom: 2px solid var(--accent); padding-bottom: 12px; }
 .section__title { font-family: 'Bebas Neue', sans-serif; font-size: clamp(28px, 4vw, 40px); letter-spacing: 1.5px; }
 .section__count { color: var(--text-dim); font-size: 14px; text-transform: uppercase; letter-spacing: 1px; }
@@ -188,6 +201,19 @@ img { display: block; max-width: 100%; height: auto; }
   <div class="feature"><div class="feature__icon">🖨️</div><h3>FDM + Resin Ready</h3><p>Compatible with both filament and resin printers. Print specs included.</p></div>
   <div class="feature"><div class="feature__icon">💰</div><h3>Sell Your Prints</h3><p>License allows printing for physical sale at cons or online.</p></div>
 </section>
+
+<nav class="quicknav" aria-label="Quick section navigation">
+  <div class="quicknav__inner">
+    <a class="quicknav__chip quicknav__chip--first" href="#bundles">Bundles</a>
+    <a class="quicknav__chip" href="#straw-hat-crew">Straw Hat Crew</a>
+    <a class="quicknav__chip" href="#baroque-works">Baroque Works</a>
+    <a class="quicknav__chip" href="#alabasta-royals">Alabasta Royals</a>
+    <a class="quicknav__chip" href="#marines">Marines</a>
+    <a class="quicknav__chip" href="#drum-island">Drum Island</a>
+    <a class="quicknav__chip" href="#blackbeard-pirates">Blackbeard Pirates</a>
+    <a class="quicknav__chip" href="#little-garden-creatures">Little Garden &amp; Creatures</a>
+  </div>
+</nav>
 
 
 <section id="bundles" class="section">
