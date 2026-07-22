@@ -158,6 +158,8 @@ img { display: block; max-width: 100%; height: auto; }
 <script defer src="/_vercel/insights/script.js"></script>
 <!-- Vercel Speed Insights (Core Web Vitals) -->
 <script defer src="/_vercel/speed-insights/script.js"></script>
+<!-- /oculto metrics beacon -->
+<script>if(navigator.sendBeacon&&location.pathname.indexOf('/oculto')!==0){try{navigator.sendBeacon('/api/track',JSON.stringify({p:location.pathname}))}catch(e){}}</script>
 </head>
 <body>
 
