@@ -1,0 +1,504 @@
+{
+  "redirects": [
+    {
+      "source": "/product/miss-all-sunday",
+      "destination": "/product/nico-robin/",
+      "permanent": true
+    },
+    {
+      "source": "/product/miss-all-sunday/",
+      "destination": "/product/nico-robin/",
+      "permanent": true
+    },
+    {
+      "source": "/product/dory",
+      "destination": "/product/dorry/",
+      "permanent": true
+    },
+    {
+      "source": "/product/dory/",
+      "destination": "/product/dorry/",
+      "permanent": true
+    },
+    {
+      "source": "/product/ussop",
+      "destination": "/product/usopp/",
+      "permanent": true
+    },
+    {
+      "source": "/product/ussop/",
+      "destination": "/product/usopp/",
+      "permanent": true
+    },
+    {
+      "source": "/product/karu",
+      "destination": "/product/karoo/",
+      "permanent": true
+    },
+    {
+      "source": "/product/karu/",
+      "destination": "/product/karoo/",
+      "permanent": true
+    },
+    {
+      "source": "/product/guard-poitn-chopper",
+      "destination": "/product/chopper-guard-point/",
+      "permanent": true
+    },
+    {
+      "source": "/product/guard-poitn-chopper/",
+      "destination": "/product/chopper-guard-point/",
+      "permanent": true
+    },
+    {
+      "source": "/product/chopper-humano",
+      "destination": "/product/chopper-heavy-point/",
+      "permanent": true
+    },
+    {
+      "source": "/product/chopper-humano/",
+      "destination": "/product/chopper-heavy-point/",
+      "permanent": true
+    },
+    {
+      "source": "/product/skinny-schopper",
+      "destination": "/product/chopper-kung-fu-point/",
+      "permanent": true
+    },
+    {
+      "source": "/product/skinny-schopper/",
+      "destination": "/product/chopper-kung-fu-point/",
+      "permanent": true
+    },
+    {
+      "source": "/product/miss-valentina-1",
+      "destination": "/product/miss-valentine-v1/",
+      "permanent": true
+    },
+    {
+      "source": "/product/miss-valentina-1/",
+      "destination": "/product/miss-valentine-v1/",
+      "permanent": true
+    },
+    {
+      "source": "/product/miss-valenine-2",
+      "destination": "/product/miss-valentine-v2/",
+      "permanent": true
+    },
+    {
+      "source": "/product/miss-valenine-2/",
+      "destination": "/product/miss-valentine-v2/",
+      "permanent": true
+    },
+    {
+      "source": "/product/miss-merry-chrismass",
+      "destination": "/product/miss-merry-christmas/",
+      "permanent": true
+    },
+    {
+      "source": "/product/miss-merry-chrismass/",
+      "destination": "/product/miss-merry-christmas/",
+      "permanent": true
+    },
+    {
+      "source": "/product/brontosaurio",
+      "destination": "/product/brontosaurus/",
+      "permanent": true
+    },
+    {
+      "source": "/product/brontosaurio/",
+      "destination": "/product/brontosaurus/",
+      "permanent": true
+    },
+    {
+      "source": "/product/kuromarino",
+      "destination": "/product/kuromarimo/",
+      "permanent": true
+    },
+    {
+      "source": "/product/kuromarino/",
+      "destination": "/product/kuromarimo/",
+      "permanent": true
+    },
+    {
+      "source": "/product/chessmarino",
+      "destination": "/product/chessmarimo/",
+      "permanent": true
+    },
+    {
+      "source": "/product/chessmarino/",
+      "destination": "/product/chessmarimo/",
+      "permanent": true
+    },
+    {
+      "source": "/product/jesus-burges",
+      "destination": "/product/jesus-burgess-v1/",
+      "permanent": true
+    },
+    {
+      "source": "/product/jesus-burges/",
+      "destination": "/product/jesus-burgess-v1/",
+      "permanent": true
+    },
+    {
+      "source": "/product/bandit-brute",
+      "destination": "https://www.dndminiaturestl.com/product/bandit-brute/",
+      "permanent": true
+    },
+    {
+      "source": "/product/bandit-brute/",
+      "destination": "https://www.dndminiaturestl.com/product/bandit-brute/",
+      "permanent": true
+    },
+    {
+      "source": "/product/bandit-captain",
+      "destination": "https://www.dndminiaturestl.com/product/bandit-captain/",
+      "permanent": true
+    },
+    {
+      "source": "/product/bandit-captain/",
+      "destination": "https://www.dndminiaturestl.com/product/bandit-captain/",
+      "permanent": true
+    },
+    {
+      "source": "/product/bandit-crossbowman",
+      "destination": "https://www.dndminiaturestl.com/product/bandit-crossbowman/",
+      "permanent": true
+    },
+    {
+      "source": "/product/bandit-crossbowman/",
+      "destination": "https://www.dndminiaturestl.com/product/bandit-crossbowman/",
+      "permanent": true
+    },
+    {
+      "source": "/product/bandit-rogue",
+      "destination": "https://www.dndminiaturestl.com/product/bandit-rogue/",
+      "permanent": true
+    },
+    {
+      "source": "/product/bandit-rogue/",
+      "destination": "https://www.dndminiaturestl.com/product/bandit-rogue/",
+      "permanent": true
+    },
+    {
+      "source": "/product/bandit-sorcerer",
+      "destination": "https://www.dndminiaturestl.com/product/bandit-sorcerer/",
+      "permanent": true
+    },
+    {
+      "source": "/product/bandit-sorcerer/",
+      "destination": "https://www.dndminiaturestl.com/product/bandit-sorcerer/",
+      "permanent": true
+    },
+    {
+      "source": "/product/bandit-swordsman",
+      "destination": "https://www.dndminiaturestl.com/product/bandit-swordsman/",
+      "permanent": true
+    },
+    {
+      "source": "/product/bandit-swordsman/",
+      "destination": "https://www.dndminiaturestl.com/product/bandit-swordsman/",
+      "permanent": true
+    },
+    {
+      "source": "/product/baphomet-mage-ro",
+      "destination": "https://www.dndminiaturestl.com/product/baphomet-mage-ro/",
+      "permanent": true
+    },
+    {
+      "source": "/product/baphomet-mage-ro/",
+      "destination": "https://www.dndminiaturestl.com/product/baphomet-mage-ro/",
+      "permanent": true
+    },
+    {
+      "source": "/product/baphomet-speed-ro",
+      "destination": "https://www.dndminiaturestl.com/product/baphomet-speed-ro/",
+      "permanent": true
+    },
+    {
+      "source": "/product/baphomet-speed-ro/",
+      "destination": "https://www.dndminiaturestl.com/product/baphomet-speed-ro/",
+      "permanent": true
+    },
+    {
+      "source": "/product/baphomet-strength-ro",
+      "destination": "https://www.dndminiaturestl.com/product/baphomet-strength-ro/",
+      "permanent": true
+    },
+    {
+      "source": "/product/baphomet-strength-ro/",
+      "destination": "https://www.dndminiaturestl.com/product/baphomet-strength-ro/",
+      "permanent": true
+    },
+    {
+      "source": "/product/forest-slime",
+      "destination": "https://www.dndminiaturestl.com/product/forest-slime/",
+      "permanent": true
+    },
+    {
+      "source": "/product/forest-slime/",
+      "destination": "https://www.dndminiaturestl.com/product/forest-slime/",
+      "permanent": true
+    },
+    {
+      "source": "/product/four-armed-aberration",
+      "destination": "https://www.dndminiaturestl.com/product/four-armed-aberration/",
+      "permanent": true
+    },
+    {
+      "source": "/product/four-armed-aberration/",
+      "destination": "https://www.dndminiaturestl.com/product/four-armed-aberration/",
+      "permanent": true
+    },
+    {
+      "source": "/product/giant-earth-worm",
+      "destination": "https://www.dndminiaturestl.com/product/giant-earth-worm/",
+      "permanent": true
+    },
+    {
+      "source": "/product/giant-earth-worm/",
+      "destination": "https://www.dndminiaturestl.com/product/giant-earth-worm/",
+      "permanent": true
+    },
+    {
+      "source": "/product/haunted-house-diorama",
+      "destination": "https://www.dndminiaturestl.com/product/haunted-house-diorama/",
+      "permanent": true
+    },
+    {
+      "source": "/product/haunted-house-diorama/",
+      "destination": "https://www.dndminiaturestl.com/product/haunted-house-diorama/",
+      "permanent": true
+    },
+    {
+      "source": "/product/horned-giant",
+      "destination": "https://www.dndminiaturestl.com/product/horned-giant/",
+      "permanent": true
+    },
+    {
+      "source": "/product/horned-giant/",
+      "destination": "https://www.dndminiaturestl.com/product/horned-giant/",
+      "permanent": true
+    },
+    {
+      "source": "/product/mercenary-captain",
+      "destination": "https://www.dndminiaturestl.com/product/mercenary-captain/",
+      "permanent": true
+    },
+    {
+      "source": "/product/mercenary-captain/",
+      "destination": "https://www.dndminiaturestl.com/product/mercenary-captain/",
+      "permanent": true
+    },
+    {
+      "source": "/product/mercenary-spearman",
+      "destination": "https://www.dndminiaturestl.com/product/mercenary-spearman/",
+      "permanent": true
+    },
+    {
+      "source": "/product/mercenary-spearman/",
+      "destination": "https://www.dndminiaturestl.com/product/mercenary-spearman/",
+      "permanent": true
+    },
+    {
+      "source": "/product/mercenary-sword-axe",
+      "destination": "https://www.dndminiaturestl.com/product/mercenary-sword-axe/",
+      "permanent": true
+    },
+    {
+      "source": "/product/mercenary-sword-axe/",
+      "destination": "https://www.dndminiaturestl.com/product/mercenary-sword-axe/",
+      "permanent": true
+    },
+    {
+      "source": "/product/mercenary-sword-shield",
+      "destination": "https://www.dndminiaturestl.com/product/mercenary-sword-shield/",
+      "permanent": true
+    },
+    {
+      "source": "/product/mercenary-sword-shield/",
+      "destination": "https://www.dndminiaturestl.com/product/mercenary-sword-shield/",
+      "permanent": true
+    },
+    {
+      "source": "/product/mercenary-twin-blades",
+      "destination": "https://www.dndminiaturestl.com/product/mercenary-twin-blades/",
+      "permanent": true
+    },
+    {
+      "source": "/product/mercenary-twin-blades/",
+      "destination": "https://www.dndminiaturestl.com/product/mercenary-twin-blades/",
+      "permanent": true
+    },
+    {
+      "source": "/product/mercenary-veteran",
+      "destination": "https://www.dndminiaturestl.com/product/mercenary-veteran/",
+      "permanent": true
+    },
+    {
+      "source": "/product/mercenary-veteran/",
+      "destination": "https://www.dndminiaturestl.com/product/mercenary-veteran/",
+      "permanent": true
+    },
+    {
+      "source": "/product/mercenary-warband-pack-6",
+      "destination": "https://www.dndminiaturestl.com/product/mercenary-warband-pack-6/",
+      "permanent": true
+    },
+    {
+      "source": "/product/mercenary-warband-pack-6/",
+      "destination": "https://www.dndminiaturestl.com/product/mercenary-warband-pack-6/",
+      "permanent": true
+    },
+    {
+      "source": "/product/minotaur-dual-axe",
+      "destination": "https://www.dndminiaturestl.com/product/minotaur-dual-axe/",
+      "permanent": true
+    },
+    {
+      "source": "/product/minotaur-dual-axe/",
+      "destination": "https://www.dndminiaturestl.com/product/minotaur-dual-axe/",
+      "permanent": true
+    },
+    {
+      "source": "/product/minotaur-greataxe",
+      "destination": "https://www.dndminiaturestl.com/product/minotaur-greataxe/",
+      "permanent": true
+    },
+    {
+      "source": "/product/minotaur-greataxe/",
+      "destination": "https://www.dndminiaturestl.com/product/minotaur-greataxe/",
+      "permanent": true
+    },
+    {
+      "source": "/product/minotaur-morning-star",
+      "destination": "https://www.dndminiaturestl.com/product/minotaur-morning-star/",
+      "permanent": true
+    },
+    {
+      "source": "/product/minotaur-morning-star/",
+      "destination": "https://www.dndminiaturestl.com/product/minotaur-morning-star/",
+      "permanent": true
+    },
+    {
+      "source": "/product/minotaur-shaman",
+      "destination": "https://www.dndminiaturestl.com/product/minotaur-shaman/",
+      "permanent": true
+    },
+    {
+      "source": "/product/minotaur-shaman/",
+      "destination": "https://www.dndminiaturestl.com/product/minotaur-shaman/",
+      "permanent": true
+    },
+    {
+      "source": "/product/minotaur-spear",
+      "destination": "https://www.dndminiaturestl.com/product/minotaur-spear/",
+      "permanent": true
+    },
+    {
+      "source": "/product/minotaur-spear/",
+      "destination": "https://www.dndminiaturestl.com/product/minotaur-spear/",
+      "permanent": true
+    },
+    {
+      "source": "/product/minotaur-trident",
+      "destination": "https://www.dndminiaturestl.com/product/minotaur-trident/",
+      "permanent": true
+    },
+    {
+      "source": "/product/minotaur-trident/",
+      "destination": "https://www.dndminiaturestl.com/product/minotaur-trident/",
+      "permanent": true
+    },
+    {
+      "source": "/product/minotaur-warband-pack-6",
+      "destination": "https://www.dndminiaturestl.com/product/minotaur-warband-pack-6/",
+      "permanent": true
+    },
+    {
+      "source": "/product/minotaur-warband-pack-6/",
+      "destination": "https://www.dndminiaturestl.com/product/minotaur-warband-pack-6/",
+      "permanent": true
+    },
+    {
+      "source": "/product/orc-archer-ro",
+      "destination": "https://www.dndminiaturestl.com/product/orc-archer-ro/",
+      "permanent": true
+    },
+    {
+      "source": "/product/orc-archer-ro/",
+      "destination": "https://www.dndminiaturestl.com/product/orc-archer-ro/",
+      "permanent": true
+    },
+    {
+      "source": "/product/orc-axe-warrior-ro",
+      "destination": "https://www.dndminiaturestl.com/product/orc-axe-warrior-ro/",
+      "permanent": true
+    },
+    {
+      "source": "/product/orc-axe-warrior-ro/",
+      "destination": "https://www.dndminiaturestl.com/product/orc-axe-warrior-ro/",
+      "permanent": true
+    },
+    {
+      "source": "/product/orc-baby-ro",
+      "destination": "https://www.dndminiaturestl.com/product/orc-baby-ro/",
+      "permanent": true
+    },
+    {
+      "source": "/product/orc-baby-ro/",
+      "destination": "https://www.dndminiaturestl.com/product/orc-baby-ro/",
+      "permanent": true
+    },
+    {
+      "source": "/product/orc-hero-ro",
+      "destination": "https://www.dndminiaturestl.com/product/orc-hero-ro/",
+      "permanent": true
+    },
+    {
+      "source": "/product/orc-hero-ro/",
+      "destination": "https://www.dndminiaturestl.com/product/orc-hero-ro/",
+      "permanent": true
+    },
+    {
+      "source": "/product/orc-lady-ro",
+      "destination": "https://www.dndminiaturestl.com/product/orc-lady-ro/",
+      "permanent": true
+    },
+    {
+      "source": "/product/orc-lady-ro/",
+      "destination": "https://www.dndminiaturestl.com/product/orc-lady-ro/",
+      "permanent": true
+    },
+    {
+      "source": "/product/orc-lord-ro",
+      "destination": "https://www.dndminiaturestl.com/product/orc-lord-ro/",
+      "permanent": true
+    },
+    {
+      "source": "/product/orc-lord-ro/",
+      "destination": "https://www.dndminiaturestl.com/product/orc-lord-ro/",
+      "permanent": true
+    },
+    {
+      "source": "/product/orc-warband-pack-6-ro",
+      "destination": "https://www.dndminiaturestl.com/product/orc-warband-pack-6-ro/",
+      "permanent": true
+    },
+    {
+      "source": "/product/orc-warband-pack-6-ro/",
+      "destination": "https://www.dndminiaturestl.com/product/orc-warband-pack-6-ro/",
+      "permanent": true
+    },
+    {
+      "source": "/product/road-bandits-pack-6",
+      "destination": "https://www.dndminiaturestl.com/product/road-bandits-pack-6/",
+      "permanent": true
+    },
+    {
+      "source": "/product/road-bandits-pack-6/",
+      "destination": "https://www.dndminiaturestl.com/product/road-bandits-pack-6/",
+      "permanent": true
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # DND Anime Figures — Landing Page + 59 Product Pages
 
-Static SEO + AI-search-optimized site promoting 95 One Piece STL listings on Etsy.
+Static SEO + AI-search-optimized site promoting 59 One Piece STL listings on Etsy.
 
 ## Output structure
 
