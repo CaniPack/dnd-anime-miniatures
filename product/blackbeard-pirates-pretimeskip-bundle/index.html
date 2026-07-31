@@ -73,6 +73,25 @@ img { display: block; max-width: 100%; height: auto; }
 }
 .footer { border-top: 1px solid var(--border); margin-top: 40px; padding: 32px 20px; text-align: center; font-size: 13px; color: var(--text-dim); }
 .footer a { color: var(--accent); }
+.custom { max-width: var(--max); margin: 0 auto; padding: 30px 20px 40px; }
+.custom__box { background: linear-gradient(135deg, var(--bg-card), var(--bg-card-hover)); border: 1px solid var(--accent); border-radius: 16px; padding: 36px 28px; text-align: center; }
+.custom__box h2 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(26px, 3.5vw, 38px); letter-spacing: 1.5px; margin-bottom: 10px; }
+.custom__price { color: var(--gold); font-weight: 800; }
+.custom__box > p { color: var(--text-dim); max-width: 640px; margin: 0 auto 20px; font-size: 15px; }
+.custom__steps { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; margin-bottom: 24px; }
+.custom__step { background: var(--bg); border: 1px solid var(--border); border-radius: 10px; padding: 12px 16px; font-size: 13px; color: var(--text-dim); max-width: 220px; text-align: left; }
+.custom__step b { color: var(--text); display: block; margin-bottom: 4px; }
+.custom__form { display: flex; gap: 10px; max-width: 600px; margin: 0 auto; }
+@media (max-width: 600px) { .custom__form { flex-direction: column; } }
+.custom__input { flex: 1; padding: 14px 16px; border-radius: 10px; border: 1px solid var(--border); background: var(--bg); color: var(--text); font-size: 14px; font-family: inherit; }
+.custom__input:focus { outline: none; border-color: var(--accent); }
+.custom__btn { background: var(--accent); color: #000; border: 0; cursor: pointer; padding: 14px 22px; border-radius: 10px; font-weight: 800; font-size: 14px; text-transform: uppercase; letter-spacing: 1px; font-family: inherit; transition: transform .15s, box-shadow .15s; }
+.custom__btn:hover { transform: translateY(-2px); box-shadow: 0 8px 24px var(--accent-glow); }
+.custom__note { margin-top: 12px; font-size: 12px; color: var(--text-dim); }
+.custom__note a { color: var(--accent); }
+.custom-banner { background: var(--bg-card); border: 1px dashed var(--accent); border-radius: 12px; padding: 16px 18px; font-size: 14px; color: var(--text-dim); text-align: center; margin: 18px 0; }
+.custom-banner b { color: var(--text); }
+.custom-banner a { color: var(--accent); font-weight: 700; white-space: nowrap; }
 
 .crumbs { max-width: var(--max); margin: 0 auto; padding: 18px 20px 0; font-size: 13px; color: var(--text-dim); }
 .crumbs a { color: var(--accent); }
@@ -220,6 +239,8 @@ The original Blackbeard Pirates crew pre-timeskip: Teach, Burgess, Van Augur, La
       <p>Download links appear right after payment.<br>Need a different format, custom adjustments, or help with your order?</p>
       <a class="cta-btn" href="mailto:seba.fyd@gmail.com" style="padding:12px 20px">Email us</a>
     </div>
+    
+<div class="custom-banner">🎨 <b>Create your custom figure</b> — send us a link to a photo and we make it into a printable mini. From <b>$15 USD</b> per figure. <a href="/#custom">Request yours →</a></div>
   </div>
 </main>
 

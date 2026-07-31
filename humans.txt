@@ -3,7 +3,7 @@ Owner: DND Anime Miniatures
 Contact: seba.fyd@gmail.com
 
 /* SITE */
-Last update: 2026-07-29
+Last update: 2026-07-31
 Standards: HTML5, CSS3, Schema.org structured data, OpenGraph, Twitter Cards
 Components: Inter + Bebas Neue (Google Fonts)
 Hosting: see deployment instructions in README.md
