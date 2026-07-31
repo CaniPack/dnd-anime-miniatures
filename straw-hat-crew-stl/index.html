@@ -118,6 +118,35 @@ img { display: block; max-width: 100%; height: auto; }
 .cart-success h4 { color: var(--gold); margin-bottom: 8px; }
 .cart-success p { font-size: 13px; color: var(--text-dim); margin-bottom: 10px; }
 .cart-success a.cart-dl { display: block; padding: 8px 0; color: #6fdc9c; font-weight: 700; font-size: 14px; }
+.cart-upgrade { background: linear-gradient(135deg, rgba(212,175,55,.12), transparent); border: 1px solid var(--gold-soft, var(--gold)); border-radius: 10px; padding: 12px 14px; margin-bottom: 12px; font-size: 13px; }
+.cart-upgrade b { color: var(--gold); }
+.cart-upgrade button { margin-top: 8px; width: 100%; background: var(--gold); color: #14100a; border: 0; cursor: pointer; padding: 10px; border-radius: 8px; font-weight: 800; font-size: 13px; font-family: inherit; }
+.cart-upgrade button:hover { filter: brightness(1.08); }
+.added-overlay { position: fixed; inset: 0; background: rgba(0,0,0,.66); z-index: 98; display: flex; align-items: center; justify-content: center; padding: 16px; overflow-y: auto; }
+.added-box { background: var(--bg-card); border: 1px solid var(--border); border-radius: 14px; max-width: 440px; width: 100%; padding: 22px; position: relative; max-height: 92vh; overflow-y: auto; animation: dicePop .2s ease; }
+.added-box__close { position: absolute; top: 8px; right: 12px; background: none; border: 0; color: var(--text-dim); font-size: 24px; cursor: pointer; line-height: 1; }
+.added-head { color: #6fdc9c; font-weight: 800; font-size: 15px; margin-bottom: 12px; }
+.added-item { display: flex; gap: 12px; align-items: center; background: var(--bg); border: 1px solid var(--border); border-radius: 10px; padding: 10px 12px; margin-bottom: 8px; }
+.added-item img { width: 52px; height: 52px; border-radius: 8px; object-fit: cover; }
+.added-item__title { flex: 1; font-size: 13px; font-weight: 600; line-height: 1.3; }
+.added-item__price { color: var(--gold); font-weight: 700; white-space: nowrap; }
+.added-sub { font-size: 12px; color: var(--text-dim); margin-bottom: 12px; }
+.added-recs-title { font-size: 11px; font-weight: 800; color: var(--text-dim); text-transform: uppercase; letter-spacing: 1px; margin: 4px 0 8px; }
+.added-rec { display: flex; gap: 10px; align-items: center; padding: 8px 0; border-bottom: 1px solid var(--border); }
+.added-rec:last-of-type { border-bottom: 0; }
+.added-rec img { width: 44px; height: 44px; border-radius: 8px; object-fit: cover; }
+.added-rec__title { flex: 1; font-size: 12px; font-weight: 600; line-height: 1.3; }
+.added-rec__price { color: var(--gold); font-size: 12px; font-weight: 700; white-space: nowrap; }
+.added-rec__btn { background: transparent; border: 1px solid var(--accent); color: var(--accent); border-radius: 8px; padding: 7px 12px; font-size: 12px; font-weight: 800; cursor: pointer; font-family: inherit; white-space: nowrap; transition: background .15s, color .15s; }
+.added-rec__btn:hover { background: var(--accent); color: #fff; }
+.added-actions { display: flex; gap: 10px; margin-top: 14px; }
+.added-actions button { flex: 1; padding: 12px; border-radius: 9px; font-weight: 800; font-size: 13px; cursor: pointer; font-family: inherit; text-transform: uppercase; letter-spacing: .5px; }
+.added-actions .added-checkout { background: var(--accent); color: #fff; border: 0; }
+.added-actions .added-checkout:hover { filter: brightness(1.1); }
+.added-actions .added-continue { background: transparent; color: var(--text-dim); border: 1px solid var(--border); }
+.added-actions .added-continue:hover { color: var(--text); border-color: var(--text-dim); }
+.card__img, .gallery__main img, .added-item img, .added-rec img { opacity: 0; transition: opacity .35s ease; }
+.card__img.img-in, .gallery__main img.img-in, .added-item img.img-in, .added-rec img.img-in { opacity: 1; }
 .dice-fab { position: fixed; left: 18px; bottom: calc(18px + env(safe-area-inset-bottom, 0px)); z-index: 90; background: var(--bg-card); border: 1px solid var(--gold); color: var(--text); cursor: pointer; border-radius: 999px; padding: 10px 16px; font-size: 13px; font-weight: 700; font-family: inherit; box-shadow: 0 6px 20px rgba(0,0,0,.45); }
 .dice-overlay { position: fixed; inset: 0; background: rgba(0,0,0,.72); z-index: 97; display: flex; align-items: center; justify-content: center; padding: 20px; overflow-y: auto; }
 .dice-box { background: var(--bg-card); border: 1px solid var(--gold); border-radius: 16px; max-width: 430px; width: 100%; padding: 30px 26px; text-align: center; position: relative; max-height: 92vh; overflow-y: auto; animation: dicePop .22s ease; }
@@ -464,6 +493,7 @@ Full set of the original Straw Hat Pirates pre-timeskip (East Blue → Enies Lob
   <div class="cart-drawer__head"><h3>Your Cart</h3><button class="cart-drawer__close" id="cart-close" aria-label="Close cart">&times;</button></div>
   <div class="cart-items" id="cart-items"></div>
   <div class="cart-foot" id="cart-foot">
+    <div id="cart-upgrade"></div>
     <div class="cart-coupon">
       <input id="coupon-input" placeholder="Discount code" aria-label="Discount code">
       <button id="coupon-apply" type="button">Apply</button>
@@ -481,6 +511,20 @@ Full set of the original Straw Hat Pirates pre-timeskip (East Blue → Enies Lob
     <div id="cart-links"></div>
   </div>
 </aside>
+<div class="added-overlay" id="added-overlay" hidden>
+  <div class="added-box">
+    <button class="added-box__close" id="added-close" aria-label="Close">&times;</button>
+    <div class="added-head">&#10003; Added to your cart</div>
+    <div class="added-item" id="added-item"></div>
+    <div class="added-sub" id="added-sub"></div>
+    <div id="added-upgrade"></div>
+    <div id="added-recs"></div>
+    <div class="added-actions">
+      <button class="added-continue" id="added-continue" type="button">Keep browsing</button>
+      <button class="added-checkout" id="added-checkout" type="button">Checkout</button>
+    </div>
+  </div>
+</div>
 <div class="dice-overlay" id="dice-overlay" hidden>
   <div class="dice-box">
     <button class="dice-box__close" id="dice-close" aria-label="Close">&times;</button>
@@ -534,10 +578,93 @@ Full set of the original Straw Hat Pirates pre-timeskip (East Blue → Enies Lob
 
   window.addToCart = function(item){
     var cart = readCart();
-    for (var i = 0; i < cart.length; i++) if (cart[i].slug === item.slug) { openCart(); return; }
-    cart.push(item); writeCart(cart); openCart();
+    for (var i = 0; i < cart.length; i++) if (cart[i].slug === item.slug) { openAdded(item, true); return; }
+    cart.push(item); writeCart(cart); openAdded(item, false);
   };
   function removeFromCart(slug){ writeCart(readCart().filter(function(i){ return i.slug !== slug; })); }
+
+  function imgFade(){
+    var imgs = document.querySelectorAll('.card__img, .gallery__main img, .added-item img, .added-rec img');
+    for (var i = 0; i < imgs.length; i++) (function(im){
+      if (im.classList.contains('img-in')) return;
+      function mark(){ im.classList.add('img-in'); }
+      if (im.complete && im.naturalWidth) { mark(); return; }
+      im.addEventListener('load', mark);
+      setTimeout(mark, 1800);
+    })(imgs[i]);
+  }
+
+  /* ===== bundle upgrade (window.CART_BUNDLES = { bundleSlug: {title, price, img, members, memberPrices} }) ===== */
+  function upgradeOffer(){
+    var map = window.CART_BUNDLES || {};
+    var cart = readCart();
+    var inCart = {};
+    for (var i = 0; i < cart.length; i++) inCart[cart[i].slug] = true;
+    for (var bslug in map) {
+      if (inCart[bslug]) continue;
+      var b = map[bslug], have = 0;
+      for (var j = 0; j < b.members.length; j++) if (inCart[b.members[j]]) have++;
+      if (have >= 3) {
+        var singles = 0;
+        for (var s in (b.memberPrices || {})) singles += b.memberPrices[s];
+        return { slug: bslug, title: b.title, price: b.price, img: b.img, members: b.members, count: b.members.length, save: Math.max(0, Math.round((singles - b.price) * 100) / 100) };
+      }
+    }
+    return null;
+  }
+  function upgradeHtml(off){
+    if (!off) return '';
+    return '<div class="cart-upgrade">&#127873; <b>Upgrade:</b> get all ' + off.count + ' minis for $' + off.price.toFixed(2)
+      + (off.save ? ' — save $' + off.save.toFixed(2) + ' vs singles' : '') + '.'
+      + '<button type="button" data-upgrade="' + off.slug + '">Upgrade my cart — $' + off.price.toFixed(2) + '</button></div>';
+  }
+  function renderUpgrades(){
+    var off = upgradeOffer();
+    var d = document.getElementById('cart-upgrade');
+    if (d) d.innerHTML = upgradeHtml(off);
+    var m = document.getElementById('added-upgrade');
+    if (m) m.innerHTML = upgradeHtml(off);
+  }
+  function applyUpgrade(bslug){
+    var b = (window.CART_BUNDLES || {})[bslug];
+    if (!b) return;
+    var cart = readCart().filter(function(i){ return b.members.indexOf(i.slug) === -1; });
+    cart.push({ slug: bslug, title: b.title, price: String(b.price), img: b.img });
+    writeCart(cart);
+    if (typeof gtag === 'function') gtag('event', 'add_to_cart', { currency: 'USD', value: b.price,
+      items: [{ item_id: bslug, item_name: b.title, price: b.price, quantity: 1 }] });
+    closeAdded();
+    openCart();
+  }
+
+  /* ===== added-to-cart modal (recs come from window.CART_RECS injected per page) ===== */
+  function openAdded(item, already){
+    var cart = readCart();
+    document.getElementById('added-item').innerHTML =
+      (item.img ? '<img src="' + item.img + '" alt="">' : '')
+      + '<div class="added-item__title">' + item.title + (already ? ' <span style="color:var(--text-dim);font-weight:400">(already in cart)</span>' : '') + '</div>'
+      + '<div class="added-item__price">' + money(parseFloat(item.price)||0) + '</div>';
+    document.getElementById('added-sub').textContent = cart.length + (cart.length > 1 ? ' items' : ' item') + ' · Subtotal ' + money(subtotal());
+    var inCart = {};
+    for (var i = 0; i < cart.length; i++) inCart[cart[i].slug] = true;
+    var recs = (window.CART_RECS || []).filter(function(r){ return !inCart[r.slug] && r.slug !== item.slug; }).slice(0, 3);
+    document.getElementById('added-recs').innerHTML = !recs.length ? '' :
+      '<div class="added-recs-title">Adventurers also print</div>' + recs.map(function(r){
+        return '<div class="added-rec"><img src="' + (r.img || '') + '" alt="">'
+          + '<div class="added-rec__title">' + r.title + '</div>'
+          + '<div class="added-rec__price">$' + (parseFloat(r.price)||0).toFixed(2) + '</div>'
+          + '<button class="added-rec__btn" type="button" data-add-cart data-slug="' + r.slug + '" data-title="' + String(r.title).replace(/"/g, '&quot;') + '" data-price="' + r.price + '" data-img="' + (r.img || '') + '">+ Add</button></div>';
+      }).join('');
+    if (recs.length && typeof gtag === 'function') gtag('event', 'view_item_list', {
+      item_list_name: 'added-modal-recs',
+      items: recs.map(function(r){ return { item_id: r.slug, item_name: r.title, price: parseFloat(r.price)||0 }; })
+    });
+    renderUpgrades();
+    document.getElementById('added-overlay').hidden = false;
+    lockScroll();
+    imgFade();
+  }
+  function closeAdded(){ document.getElementById('added-overlay').hidden = true; lockScroll(); }
 
   function renderCart(){
     var cart = readCart();
@@ -568,12 +695,15 @@ Full set of the original Straw Hat Pirates pre-timeskip (East Blue → Enies Lob
     document.getElementById('cart-total').textContent = money(total());
     var c = readCoupon();
     if (c && c.code) document.getElementById('coupon-input').value = c.code;
+    renderUpgrades();
+    imgFade();
   }
 
   function lockScroll(){
     var cartOpen = !document.getElementById('cart-drawer').hidden;
     var diceOpen = !document.getElementById('dice-overlay').hidden;
-    document.documentElement.style.overflow = (cartOpen || diceOpen) ? 'hidden' : '';
+    var addedOpen = !document.getElementById('added-overlay').hidden;
+    document.documentElement.style.overflow = (cartOpen || diceOpen || addedOpen) ? 'hidden' : '';
   }
   function openCart(){
     document.getElementById('cart-overlay').hidden = false;
@@ -651,6 +781,8 @@ Full set of the original Straw Hat Pirates pre-timeskip (East Blue → Enies Lob
   }
 
   document.addEventListener('click', function(e){
+    var up = e.target.closest && e.target.closest('[data-upgrade]');
+    if (up) { applyUpgrade(up.getAttribute('data-upgrade')); return; }
     var rm = e.target.closest && e.target.closest('[data-rm]');
     if (rm) { removeFromCart(rm.getAttribute('data-rm')); return; }
     var add = e.target.closest && e.target.closest('[data-add-cart]');
@@ -664,6 +796,10 @@ Full set of the original Straw Hat Pirates pre-timeskip (East Blue → Enies Lob
   document.getElementById('cart-fab').addEventListener('click', openCart);
   document.getElementById('cart-close').addEventListener('click', closeCart);
   document.getElementById('cart-overlay').addEventListener('click', closeCart);
+  document.getElementById('added-close').addEventListener('click', closeAdded);
+  document.getElementById('added-continue').addEventListener('click', closeAdded);
+  document.getElementById('added-checkout').addEventListener('click', function(){ closeAdded(); openCart(); });
+  document.getElementById('added-overlay').addEventListener('click', function(e){ if (e.target === this) closeAdded(); });
 
   document.getElementById('coupon-apply').addEventListener('click', function(){
     var code = (document.getElementById('coupon-input').value || '').trim().toUpperCase();
@@ -693,7 +829,7 @@ Full set of the original Straw Hat Pirates pre-timeskip (East Blue → Enies Lob
   document.getElementById('dice-close').addEventListener('click', closeDice);
   document.getElementById('dice-overlay').addEventListener('click', function(e){ if (e.target === this) closeDice(); });
   diceFab.addEventListener('click', openDice);
-  document.addEventListener('keydown', function(e){ if (e.key === 'Escape') { closeCart(); closeDice(); } });
+  document.addEventListener('keydown', function(e){ if (e.key === 'Escape') { closeCart(); closeDice(); closeAdded(); } });
   if (!d20Done()) {
     diceFab.hidden = false;
     var shown = false;
@@ -745,6 +881,7 @@ Full set of the original Straw Hat Pirates pre-timeskip (East Blue → Enies Lob
   });
 
   renderCart();
+  imgFade();
 })();
 </script>
 </body>
