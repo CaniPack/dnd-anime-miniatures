@@ -43,6 +43,48 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.dndanimeminiatures.com/guides/</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.dndanimeminiatures.com/guides/anime-figure-printer-settings/</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.dndanimeminiatures.com/guides/anime-miniature-size-guide/</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.dndanimeminiatures.com/guides/scale-anime-stl-slicer/</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.dndanimeminiatures.com/guides/sell-3d-printed-anime-figures/</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.dndanimeminiatures.com/guides/where-to-find-anime-stl-files/</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.dndanimeminiatures.com/custom-anime-miniatures/</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.dndanimeminiatures.com/product/baroque-works-bundle/</loc>
     <lastmod>2026-05-14</lastmod>
     <changefreq>monthly</changefreq>
