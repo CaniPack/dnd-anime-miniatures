@@ -3,7 +3,7 @@ Owner: DND Anime Miniatures
 Contact: info@dndanimeminiatures.com
 
 /* SITE */
-Last update: 2026-07-31
+Last update: 2026-08-01
 Standards: HTML5, CSS3, Schema.org structured data, OpenGraph, Twitter Cards
 Components: Inter + Bebas Neue (Google Fonts)
 Hosting: see deployment instructions in README.md
