@@ -590,7 +590,7 @@ Fan-art inspired by Eiichiro Oda&#39;s work. No official affiliation with Toei/S
 })();
 </script>
 
-<button class="dice-fab" id="dice-fab" aria-label="Roll the D20 for a discount"><span>&#127922; Win up to 20% off</span></button>
+<button class="dice-fab" id="dice-fab" aria-label="Roll the D20 for a discount and a free mini"><span>&#127922; Free mini + up to 20% off</span></button>
 <div class="cart-overlay" id="cart-overlay" hidden></div>
 <aside class="cart-drawer" id="cart-drawer" hidden aria-label="Shopping cart">
   <div class="cart-drawer__head"><h3>Your Cart</h3><button class="cart-drawer__close" id="cart-close" aria-label="Close cart">&times;</button></div>
@@ -649,13 +649,13 @@ Fan-art inspired by Eiichiro Oda&#39;s work. No official affiliation with Toei/S
     </div>
     <div id="dice-step1">
       <p class="dice-box__t">Roll the D20</p>
-      <p class="dice-box__sub">One roll per adventurer. Whatever number it lands on is your discount — up to <b>20% off</b>.</p>
+      <p class="dice-box__sub">One roll per adventurer. The number is your discount — up to <b>20% off</b> — AND it picks your <b>free miniature</b>: low rolls win small minis, a 20 wins the biggest prize. <a href="/free-anime-miniature-stl/" style="color:var(--gold)">See the 20 prizes →</a></p>
       <div class="dice-form">
         <input id="dice-email" type="email" placeholder="your@email.com" autocomplete="email" aria-label="Your email">
         <div class="dice-err" id="dice-err"></div>
         <button id="dice-roll" type="button">Roll for my discount</button>
       </div>
-      <p class="dice-note">Your discount code will be emailed to this address — double-check it's correct. No spam, unsubscribe anytime.</p>
+      <p class="dice-note">Your discount code AND your free mini's download link go to this email — double-check it's correct. One roll per adventurer. No spam, unsubscribe anytime.</p>
     </div>
     <div class="dice-result" id="dice-result" hidden>
       <p class="dice-result__t" id="dice-result-title">You rolled a 20!</p>
@@ -950,8 +950,8 @@ Fan-art inspired by Eiichiro Oda&#39;s work. No official affiliation with Toei/S
     document.getElementById('dice-step1').hidden = true;
     var out = document.getElementById('dice-result');
     out.hidden = false;
-    document.getElementById('dice-result-title').textContent = 'You rolled a ' + res.roll + ' — ' + res.roll + '% off!';
-    document.getElementById('dice-result-text').innerHTML = 'Your discount code was sent to <b>' + (res.email || 'your email') + '</b>. Check spam if you cannot find it — then paste the code in the cart at checkout.';
+    document.getElementById('dice-result-title').textContent = 'You rolled a ' + res.roll + ' — ' + res.roll + '% off' + (res.prize ? ' + FREE ' + res.prize + '!' : '!');
+    document.getElementById('dice-result-text').innerHTML = 'Your discount code' + (res.prize ? ' and your free <b>' + res.prize + '</b>' : '') + ' were sent to <b>' + (res.email || 'your email') + '</b>. Check spam if you cannot find it — then paste the code in the cart at checkout.';
   }
   function openDice(){ syncDiceState(); document.getElementById('dice-overlay').hidden = false; lockScroll(); }
   function closeDice(){ document.getElementById('dice-overlay').hidden = true; lockScroll(); }
@@ -982,7 +982,10 @@ Fan-art inspired by Eiichiro Oda&#39;s work. No official affiliation with Toei/S
           clearInterval(spin); wrap.classList.remove('dice-d20--rolling');
           if (!res || !res.ok) {
             btn.disabled = false; btn.textContent = 'Roll for my discount';
-            err.textContent = (res && res.error === 'bad_email') ? 'That email looks wrong — check it and try again.' : 'Something failed — try again in a minute.';
+            if (res && res.error === 'already_claimed') err.textContent = 'You already rolled — your code and free mini were sent to your email. One roll per adventurer!';
+            else if (res && res.error === 'too_many') err.textContent = 'Too many rolls from this network today — try again tomorrow.';
+            else if (res && res.error === 'bad_email') err.textContent = 'That email will not work — use a real, non-temporary address (your prize is sent there).';
+            else err.textContent = 'Something failed — try again in a minute.';
             return;
           }
           die.textContent = res.roll;
@@ -991,11 +994,12 @@ Fan-art inspired by Eiichiro Oda&#39;s work. No official affiliation with Toei/S
           document.getElementById('dice-step1').hidden = true;
           var out = document.getElementById('dice-result');
           out.hidden = false;
-          document.getElementById('dice-result-title').textContent = 'You rolled a ' + res.roll + ' — ' + res.roll + '% off!';
+          var prizeTitle = res.prize && res.prize.title ? res.prize.title : '';
+          document.getElementById('dice-result-title').textContent = 'You rolled a ' + res.roll + ' — ' + res.roll + '% off' + (prizeTitle ? ' + FREE ' + prizeTitle + '!' : '!');
           document.getElementById('dice-result-text').innerHTML = res.emailSent
-            ? 'Your discount code is on its way to <b>' + email + '</b>. Check your inbox (and spam) — then paste the code in the cart at checkout.'
-            : 'You won ' + res.roll + '% off, but we could not send the email. Write to us and mention this roll — we will send your code.';
-          try { localStorage.setItem(D20_DONE, '1'); localStorage.setItem('d20_result', JSON.stringify({ roll: res.roll, email: email })); } catch(e){}
+            ? 'Your discount code' + (prizeTitle ? ' and the download link for your free <b>' + prizeTitle + '</b>' : '') + ' are on their way to <b>' + email + '</b>. Check your inbox (and spam) — then paste the code in the cart at checkout.'
+            : 'You won ' + res.roll + '% off' + (prizeTitle ? ' + a free ' + prizeTitle : '') + ', but we could not send the email. Write to us and mention this roll — we will sort it out.';
+          try { localStorage.setItem(D20_DONE, '1'); localStorage.setItem('d20_result', JSON.stringify({ roll: res.roll, email: email, prize: prizeTitle })); } catch(e){}
           try { if (window.omnisend && typeof omnisend.identifyContact === 'function') omnisend.identifyContact({ email: email }); } catch(e){}
           if (typeof gtag === 'function') gtag('event', 'generate_lead', { currency: 'USD', value: res.roll });
         }, 1600);
