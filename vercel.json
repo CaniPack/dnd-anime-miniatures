@@ -500,5 +500,16 @@
       "destination": "https://www.dndminiaturestl.com/product/road-bandits-pack-6/",
       "permanent": true
     }
+  ],
+  "headers": [
+    {
+      "source": "/images/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=2592000, stale-while-revalidate=86400"
+        }
+      ]
+    }
   ]
 }
