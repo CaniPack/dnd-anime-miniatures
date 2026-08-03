@@ -1,6 +1,11 @@
 {
   "redirects": [
     {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
       "source": "/product/miss-all-sunday",
       "destination": "/product/nico-robin/",
       "permanent": true
