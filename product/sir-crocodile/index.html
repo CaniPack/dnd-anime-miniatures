@@ -210,11 +210,18 @@ img { display: block; max-width: 100%; height: auto; }
 .product { max-width: var(--max); margin: 0 auto; padding: 30px 20px 60px; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 40px; }
 @media (max-width: 800px) { .product { grid-template-columns: 1fr; gap: 24px; } }
 .gallery { display: flex; flex-direction: column; gap: 10px; }
-.gallery__main { aspect-ratio: 1/1; background: #0a0a0a; border-radius: 14px; overflow: hidden; border: 1px solid var(--border); }
+.gallery__main { aspect-ratio: 1/1; background: #0a0a0a; border-radius: 14px; overflow: hidden; border: 1px solid var(--border); cursor: zoom-in; position: relative; }
+.gallery__main::after { content: '⛶'; position: absolute; right: 12px; bottom: 10px; color: rgba(255,255,255,.7); font-size: 18px; background: rgba(0,0,0,.5); border-radius: 8px; padding: 3px 9px; pointer-events: none; }
 .gallery__main img { width: 100%; height: 100%; object-fit: cover; }
 .gallery__thumbs { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
-.gallery__thumb { aspect-ratio: 1/1; border-radius: 8px; overflow: hidden; border: 1px solid var(--border); background: #0a0a0a; }
+.gallery__thumb { aspect-ratio: 1/1; border-radius: 8px; overflow: hidden; border: 1px solid var(--border); background: #0a0a0a; padding: 0; cursor: pointer; transition: border-color .15s, opacity .15s; opacity: .75; }
+.gallery__thumb:hover { opacity: 1; }
+.gallery__thumb.is-active { border-color: var(--accent); opacity: 1; }
 .gallery__thumb img { width: 100%; height: 100%; object-fit: cover; }
+.lightbox { position: fixed; inset: 0; z-index: 200; background: rgba(0,0,0,.92); display: flex; align-items: center; justify-content: center; padding: 24px; }
+.lightbox[hidden] { display: none; }
+.lightbox img { max-width: 96vw; max-height: 92vh; border-radius: 10px; }
+.lightbox__close { position: absolute; top: 16px; right: 22px; background: none; border: 0; color: #fff; font-size: 38px; cursor: pointer; line-height: 1; }
 .info h1 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(28px, 4vw, 44px); line-height: 1.05; letter-spacing: 1.5px; margin-bottom: 12px; }
 .info__saga { color: var(--accent); text-transform: uppercase; letter-spacing: 1.5px; font-size: 12px; font-weight: 700; margin-bottom: 14px; }
 .info__price-row { display: flex; align-items: center; gap: 16px; padding: 16px 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); margin: 18px 0 24px; }
@@ -320,9 +327,36 @@ img { display: block; max-width: 100%; height: auto; }
 <main class="product">
   
 <div class="gallery">
-  <div class="gallery__main"><img src="../../images/sir-crocodile-1.webp" srcset="../../images/sir-crocodile-1-c.webp 600w, ../../images/sir-crocodile-1.webp 1024w" sizes="(max-width: 800px) 92vw, 560px" fetchpriority="high" alt="Sir Crocodile · Mr. 0 STL · DND Anime Miniature — One Piece 3D Print | Former Shichibukai · Baroque Works Boss — main view" width="800" height="800"></div>
+  <div class="gallery__main" id="gallery-main" role="button" tabindex="0" aria-label="Open image full size"><img src="../../images/sir-crocodile-1.webp" srcset="../../images/sir-crocodile-1-c.webp 600w, ../../images/sir-crocodile-1.webp 1024w" sizes="(max-width: 800px) 92vw, 560px" fetchpriority="high" alt="Sir Crocodile · Mr. 0 STL · DND Anime Miniature — One Piece 3D Print | Former Shichibukai · Baroque Works Boss — main view" width="800" height="800"></div>
   
 </div>
+<div class="lightbox" id="lightbox" hidden>
+  <button class="lightbox__close" id="lightbox-close" aria-label="Close">&times;</button>
+  <img id="lightbox-img" alt="Full size view">
+</div>
+<script>
+(function(){
+  var main = document.getElementById('gallery-main');
+  if (!main) return;
+  var mainImg = main.querySelector('img');
+  var thumbs = document.querySelectorAll('.gallery__thumb');
+  for (var i = 0; i < thumbs.length; i++) thumbs[i].addEventListener('click', function(){
+    mainImg.src = this.getAttribute('data-img');
+    mainImg.removeAttribute('srcset');
+    for (var j = 0; j < thumbs.length; j++) thumbs[j].classList.remove('is-active');
+    this.classList.add('is-active');
+  });
+  var lb = document.getElementById('lightbox');
+  var lbImg = document.getElementById('lightbox-img');
+  function openLb(){ lbImg.src = mainImg.src; lb.hidden = false; document.documentElement.style.overflow = 'hidden'; }
+  function closeLb(){ if (lb.hidden) return; lb.hidden = true; document.documentElement.style.overflow = ''; }
+  main.addEventListener('click', openLb);
+  main.addEventListener('keydown', function(e){ if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openLb(); } });
+  document.getElementById('lightbox-close').addEventListener('click', closeLb);
+  lb.addEventListener('click', function(e){ if (e.target === lb) closeLb(); });
+  document.addEventListener('keydown', function(e){ if (e.key === 'Escape') closeLb(); });
+})();
+</script>
   <div class="info">
     <div class="info__saga">Baroque Works</div>
     <h1>Sir Crocodile · Mr. 0 STL · DND Anime Miniature — One Piece 3D Print | Former Shichibukai · Baroque Works Boss</h1>
