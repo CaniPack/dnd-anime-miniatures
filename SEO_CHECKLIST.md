@@ -57,9 +57,13 @@ curl -X POST "https://api.indexnow.org/IndexNow" \
   "urlList": [
     "https://yourdomain.com/",
     "https://yourdomain.com/product/baroque-works-bundle/",
+    "https://yourdomain.com/product/benn-beckman/",
+    "https://yourdomain.com/product/big-mom/",
     "https://yourdomain.com/product/blackbeard-pirates-pretimeskip-bundle/",
+    "https://yourdomain.com/product/blackbeard-yonko/",
     "https://yourdomain.com/product/brogy/",
     "https://yourdomain.com/product/brontosaurus/",
+    "https://yourdomain.com/product/buggy-the-clown/",
     "https://yourdomain.com/product/cat-sea-beast/",
     "https://yourdomain.com/product/chess/",
     "https://yourdomain.com/product/chessmarimo/",
@@ -76,6 +80,8 @@ curl -X POST "https://api.indexnow.org/IndexNow" \
     "https://yourdomain.com/product/hiruluk/",
     "https://yourdomain.com/product/jesus-burgess-v1/",
     "https://yourdomain.com/product/jesus-burgess/",
+    "https://yourdomain.com/product/jinbe/",
+    "https://yourdomain.com/product/kaido/",
     "https://yourdomain.com/product/karoo/",
     "https://yourdomain.com/product/kureha/",
     "https://yourdomain.com/product/kuromarimo/",
@@ -101,20 +107,29 @@ curl -X POST "https://api.indexnow.org/IndexNow" \
     "https://yourdomain.com/product/mr-9/",
     "https://yourdomain.com/product/mugiwara-crew-pretimeskip-bundle/",
     "https://yourdomain.com/product/nami/",
+    "https://yourdomain.com/product/nami-clima-tact/",
+    "https://yourdomain.com/product/nami-treasure-hunter/",
     "https://yourdomain.com/product/nefertari-cobra/",
     "https://yourdomain.com/product/nefertari-vivi/",
     "https://yourdomain.com/product/negikuma-maria/",
+    "https://yourdomain.com/product/nico-robin-ruins/",
     "https://yourdomain.com/product/robson/",
     "https://yourdomain.com/product/roronoa-zoro/",
     "https://yourdomain.com/product/sanji/",
+    "https://yourdomain.com/product/sanji-baratie/",
+    "https://yourdomain.com/product/shanks/",
     "https://yourdomain.com/product/sir-crocodile/",
     "https://yourdomain.com/product/chopper-kung-fu-point/",
     "https://yourdomain.com/product/smoker/",
     "https://yourdomain.com/product/tashigi/",
     "https://yourdomain.com/product/teach-pre-timeskip/",
+    "https://yourdomain.com/product/trafalgar-law-statue/",
     "https://yourdomain.com/product/usopp/",
     "https://yourdomain.com/product/van-augur/",
-    "https://yourdomain.com/product/wappol/"
+    "https://yourdomain.com/product/wappol/",
+    "https://yourdomain.com/product/whitebeard/",
+    "https://yourdomain.com/product/yasopp/",
+    "https://yourdomain.com/product/zoro-wano/"
   ]
 }
 EOF
@@ -154,7 +169,7 @@ The above gets you indexed. Now you need links and traffic for rankings:
 
 ## Reference files
 
-- `sitemap.xml` — all 60 URLs with lastmod, image metadata, license info
+- `sitemap.xml` — all 75 URLs with lastmod, image metadata, license info
 - `robots.txt` — explicit allows for AI crawlers (GPTBot, ClaudeBot, PerplexityBot, Google-Extended, Applebot, etc.)
 - `llms.txt` — AI-friendly catalog with character lore + D&D class suggestions
 - `humans.txt` — site metadata for curious humans

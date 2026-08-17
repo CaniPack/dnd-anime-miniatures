@@ -146,6 +146,26 @@
       "permanent": true
     },
     {
+      "source": "/product/nico-robin",
+      "destination": "/product/nico-robin-ruins/",
+      "permanent": true
+    },
+    {
+      "source": "/product/nico-robin/",
+      "destination": "/product/nico-robin-ruins/",
+      "permanent": true
+    },
+    {
+      "source": "/product/amethyst-archmage",
+      "destination": "https://www.dndminiaturestl.com/product/amethyst-archmage/",
+      "permanent": true
+    },
+    {
+      "source": "/product/amethyst-archmage/",
+      "destination": "https://www.dndminiaturestl.com/product/amethyst-archmage/",
+      "permanent": true
+    },
+    {
       "source": "/product/bandit-brute",
       "destination": "https://www.dndminiaturestl.com/product/bandit-brute/",
       "permanent": true
@@ -236,6 +256,136 @@
       "permanent": true
     },
     {
+      "source": "/product/bard-violet-muse",
+      "destination": "https://www.dndminiaturestl.com/product/bard-violet-muse/",
+      "permanent": true
+    },
+    {
+      "source": "/product/bard-violet-muse/",
+      "destination": "https://www.dndminiaturestl.com/product/bard-violet-muse/",
+      "permanent": true
+    },
+    {
+      "source": "/product/bloodmaul-warlord",
+      "destination": "https://www.dndminiaturestl.com/product/bloodmaul-warlord/",
+      "permanent": true
+    },
+    {
+      "source": "/product/bloodmaul-warlord/",
+      "destination": "https://www.dndminiaturestl.com/product/bloodmaul-warlord/",
+      "permanent": true
+    },
+    {
+      "source": "/product/blue-slime",
+      "destination": "https://www.dndminiaturestl.com/product/blue-slime/",
+      "permanent": true
+    },
+    {
+      "source": "/product/blue-slime/",
+      "destination": "https://www.dndminiaturestl.com/product/blue-slime/",
+      "permanent": true
+    },
+    {
+      "source": "/product/brave-wayfarer-chibi",
+      "destination": "https://www.dndminiaturestl.com/product/brave-wayfarer-chibi/",
+      "permanent": true
+    },
+    {
+      "source": "/product/brave-wayfarer-chibi/",
+      "destination": "https://www.dndminiaturestl.com/product/brave-wayfarer-chibi/",
+      "permanent": true
+    },
+    {
+      "source": "/product/bronze-spirit-monk",
+      "destination": "https://www.dndminiaturestl.com/product/bronze-spirit-monk/",
+      "permanent": true
+    },
+    {
+      "source": "/product/bronze-spirit-monk/",
+      "destination": "https://www.dndminiaturestl.com/product/bronze-spirit-monk/",
+      "permanent": true
+    },
+    {
+      "source": "/product/chameleon-agent",
+      "destination": "https://www.dndminiaturestl.com/product/chameleon-agent/",
+      "permanent": true
+    },
+    {
+      "source": "/product/chameleon-agent/",
+      "destination": "https://www.dndminiaturestl.com/product/chameleon-agent/",
+      "permanent": true
+    },
+    {
+      "source": "/product/cleric-flamekeeper",
+      "destination": "https://www.dndminiaturestl.com/product/cleric-flamekeeper/",
+      "permanent": true
+    },
+    {
+      "source": "/product/cleric-flamekeeper/",
+      "destination": "https://www.dndminiaturestl.com/product/cleric-flamekeeper/",
+      "permanent": true
+    },
+    {
+      "source": "/product/crimson-flame-knight",
+      "destination": "https://www.dndminiaturestl.com/product/crimson-flame-knight/",
+      "permanent": true
+    },
+    {
+      "source": "/product/crimson-flame-knight/",
+      "destination": "https://www.dndminiaturestl.com/product/crimson-flame-knight/",
+      "permanent": true
+    },
+    {
+      "source": "/product/crystal-druid",
+      "destination": "https://www.dndminiaturestl.com/product/crystal-druid/",
+      "permanent": true
+    },
+    {
+      "source": "/product/crystal-druid/",
+      "destination": "https://www.dndminiaturestl.com/product/crystal-druid/",
+      "permanent": true
+    },
+    {
+      "source": "/product/desert-spear-warrior",
+      "destination": "https://www.dndminiaturestl.com/product/desert-spear-warrior/",
+      "permanent": true
+    },
+    {
+      "source": "/product/desert-spear-warrior/",
+      "destination": "https://www.dndminiaturestl.com/product/desert-spear-warrior/",
+      "permanent": true
+    },
+    {
+      "source": "/product/dragonborn-scaleblade",
+      "destination": "https://www.dndminiaturestl.com/product/dragonborn-scaleblade/",
+      "permanent": true
+    },
+    {
+      "source": "/product/dragonborn-scaleblade/",
+      "destination": "https://www.dndminiaturestl.com/product/dragonborn-scaleblade/",
+      "permanent": true
+    },
+    {
+      "source": "/product/dragonborn-warlord",
+      "destination": "https://www.dndminiaturestl.com/product/dragonborn-warlord/",
+      "permanent": true
+    },
+    {
+      "source": "/product/dragonborn-warlord/",
+      "destination": "https://www.dndminiaturestl.com/product/dragonborn-warlord/",
+      "permanent": true
+    },
+    {
+      "source": "/product/elf-archer-emerald",
+      "destination": "https://www.dndminiaturestl.com/product/elf-archer-emerald/",
+      "permanent": true
+    },
+    {
+      "source": "/product/elf-archer-emerald/",
+      "destination": "https://www.dndminiaturestl.com/product/elf-archer-emerald/",
+      "permanent": true
+    },
+    {
       "source": "/product/forest-slime",
       "destination": "https://www.dndminiaturestl.com/product/forest-slime/",
       "permanent": true
@@ -243,6 +393,16 @@
     {
       "source": "/product/forest-slime/",
       "destination": "https://www.dndminiaturestl.com/product/forest-slime/",
+      "permanent": true
+    },
+    {
+      "source": "/product/forest-warden-archer",
+      "destination": "https://www.dndminiaturestl.com/product/forest-warden-archer/",
+      "permanent": true
+    },
+    {
+      "source": "/product/forest-warden-archer/",
+      "destination": "https://www.dndminiaturestl.com/product/forest-warden-archer/",
       "permanent": true
     },
     {
@@ -266,6 +426,16 @@
       "permanent": true
     },
     {
+      "source": "/product/golden-fist-monk",
+      "destination": "https://www.dndminiaturestl.com/product/golden-fist-monk/",
+      "permanent": true
+    },
+    {
+      "source": "/product/golden-fist-monk/",
+      "destination": "https://www.dndminiaturestl.com/product/golden-fist-monk/",
+      "permanent": true
+    },
+    {
       "source": "/product/haunted-house-diorama",
       "destination": "https://www.dndminiaturestl.com/product/haunted-house-diorama/",
       "permanent": true
@@ -276,6 +446,16 @@
       "permanent": true
     },
     {
+      "source": "/product/heavy-knight-tower-shield",
+      "destination": "https://www.dndminiaturestl.com/product/heavy-knight-tower-shield/",
+      "permanent": true
+    },
+    {
+      "source": "/product/heavy-knight-tower-shield/",
+      "destination": "https://www.dndminiaturestl.com/product/heavy-knight-tower-shield/",
+      "permanent": true
+    },
+    {
       "source": "/product/horned-giant",
       "destination": "https://www.dndminiaturestl.com/product/horned-giant/",
       "permanent": true
@@ -283,6 +463,36 @@
     {
       "source": "/product/horned-giant/",
       "destination": "https://www.dndminiaturestl.com/product/horned-giant/",
+      "permanent": true
+    },
+    {
+      "source": "/product/kobold-ranger-emberfang",
+      "destination": "https://www.dndminiaturestl.com/product/kobold-ranger-emberfang/",
+      "permanent": true
+    },
+    {
+      "source": "/product/kobold-ranger-emberfang/",
+      "destination": "https://www.dndminiaturestl.com/product/kobold-ranger-emberfang/",
+      "permanent": true
+    },
+    {
+      "source": "/product/kobold-spear-guard",
+      "destination": "https://www.dndminiaturestl.com/product/kobold-spear-guard/",
+      "permanent": true
+    },
+    {
+      "source": "/product/kobold-spear-guard/",
+      "destination": "https://www.dndminiaturestl.com/product/kobold-spear-guard/",
+      "permanent": true
+    },
+    {
+      "source": "/product/lion-guardian-knight",
+      "destination": "https://www.dndminiaturestl.com/product/lion-guardian-knight/",
+      "permanent": true
+    },
+    {
+      "source": "/product/lion-guardian-knight/",
+      "destination": "https://www.dndminiaturestl.com/product/lion-guardian-knight/",
       "permanent": true
     },
     {
@@ -426,6 +636,16 @@
       "permanent": true
     },
     {
+      "source": "/product/oathbound-knight",
+      "destination": "https://www.dndminiaturestl.com/product/oathbound-knight/",
+      "permanent": true
+    },
+    {
+      "source": "/product/oathbound-knight/",
+      "destination": "https://www.dndminiaturestl.com/product/oathbound-knight/",
+      "permanent": true
+    },
+    {
       "source": "/product/orc-archer-ro",
       "destination": "https://www.dndminiaturestl.com/product/orc-archer-ro/",
       "permanent": true
@@ -496,6 +716,86 @@
       "permanent": true
     },
     {
+      "source": "/product/pirate-captain-corsair",
+      "destination": "https://www.dndminiaturestl.com/product/pirate-captain-corsair/",
+      "permanent": true
+    },
+    {
+      "source": "/product/pirate-captain-corsair/",
+      "destination": "https://www.dndminiaturestl.com/product/pirate-captain-corsair/",
+      "permanent": true
+    },
+    {
+      "source": "/product/pirate-captain-flintlock",
+      "destination": "https://www.dndminiaturestl.com/product/pirate-captain-flintlock/",
+      "permanent": true
+    },
+    {
+      "source": "/product/pirate-captain-flintlock/",
+      "destination": "https://www.dndminiaturestl.com/product/pirate-captain-flintlock/",
+      "permanent": true
+    },
+    {
+      "source": "/product/pirate-captain-hammerbeard",
+      "destination": "https://www.dndminiaturestl.com/product/pirate-captain-hammerbeard/",
+      "permanent": true
+    },
+    {
+      "source": "/product/pirate-captain-hammerbeard/",
+      "destination": "https://www.dndminiaturestl.com/product/pirate-captain-hammerbeard/",
+      "permanent": true
+    },
+    {
+      "source": "/product/pirate-captain-toast",
+      "destination": "https://www.dndminiaturestl.com/product/pirate-captain-toast/",
+      "permanent": true
+    },
+    {
+      "source": "/product/pirate-captain-toast/",
+      "destination": "https://www.dndminiaturestl.com/product/pirate-captain-toast/",
+      "permanent": true
+    },
+    {
+      "source": "/product/pirate-deckhand-barrel",
+      "destination": "https://www.dndminiaturestl.com/product/pirate-deckhand-barrel/",
+      "permanent": true
+    },
+    {
+      "source": "/product/pirate-deckhand-barrel/",
+      "destination": "https://www.dndminiaturestl.com/product/pirate-deckhand-barrel/",
+      "permanent": true
+    },
+    {
+      "source": "/product/pirate-hammer-corsair",
+      "destination": "https://www.dndminiaturestl.com/product/pirate-hammer-corsair/",
+      "permanent": true
+    },
+    {
+      "source": "/product/pirate-hammer-corsair/",
+      "destination": "https://www.dndminiaturestl.com/product/pirate-hammer-corsair/",
+      "permanent": true
+    },
+    {
+      "source": "/product/pixel-adventurer-chibi",
+      "destination": "https://www.dndminiaturestl.com/product/pixel-adventurer-chibi/",
+      "permanent": true
+    },
+    {
+      "source": "/product/pixel-adventurer-chibi/",
+      "destination": "https://www.dndminiaturestl.com/product/pixel-adventurer-chibi/",
+      "permanent": true
+    },
+    {
+      "source": "/product/radiant-guardian-paladin",
+      "destination": "https://www.dndminiaturestl.com/product/radiant-guardian-paladin/",
+      "permanent": true
+    },
+    {
+      "source": "/product/radiant-guardian-paladin/",
+      "destination": "https://www.dndminiaturestl.com/product/radiant-guardian-paladin/",
+      "permanent": true
+    },
+    {
       "source": "/product/road-bandits-pack-6",
       "destination": "https://www.dndminiaturestl.com/product/road-bandits-pack-6/",
       "permanent": true
@@ -503,6 +803,46 @@
     {
       "source": "/product/road-bandits-pack-6/",
       "destination": "https://www.dndminiaturestl.com/product/road-bandits-pack-6/",
+      "permanent": true
+    },
+    {
+      "source": "/product/ruined-spire-wyrm",
+      "destination": "https://www.dndminiaturestl.com/product/ruined-spire-wyrm/",
+      "permanent": true
+    },
+    {
+      "source": "/product/ruined-spire-wyrm/",
+      "destination": "https://www.dndminiaturestl.com/product/ruined-spire-wyrm/",
+      "permanent": true
+    },
+    {
+      "source": "/product/shadowblade-rogue",
+      "destination": "https://www.dndminiaturestl.com/product/shadowblade-rogue/",
+      "permanent": true
+    },
+    {
+      "source": "/product/shadowblade-rogue/",
+      "destination": "https://www.dndminiaturestl.com/product/shadowblade-rogue/",
+      "permanent": true
+    },
+    {
+      "source": "/product/skullborne-barbarian",
+      "destination": "https://www.dndminiaturestl.com/product/skullborne-barbarian/",
+      "permanent": true
+    },
+    {
+      "source": "/product/skullborne-barbarian/",
+      "destination": "https://www.dndminiaturestl.com/product/skullborne-barbarian/",
+      "permanent": true
+    },
+    {
+      "source": "/product/stormmarked-berserker",
+      "destination": "https://www.dndminiaturestl.com/product/stormmarked-berserker/",
+      "permanent": true
+    },
+    {
+      "source": "/product/stormmarked-berserker/",
+      "destination": "https://www.dndminiaturestl.com/product/stormmarked-berserker/",
       "permanent": true
     }
   ],

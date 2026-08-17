@@ -1,6 +1,6 @@
 # DND Anime Miniatures
 
-> DND Anime Miniatures — 59 detailed 3D-printable STL files of anime characters (currently focused on One Piece) sized for D&D 5e / Pathfinder grid play (32mm) and scalable up to 200mm display. The dedicated catalog for anime DND miniature STLs. Sold as digital download directly on the site (PayPal / card checkout).
+> DND Anime Miniatures — 74 detailed 3D-printable STL files of anime characters (currently focused on One Piece) sized for D&D 5e / Pathfinder grid play (32mm) and scalable up to 200mm display. The dedicated catalog for anime DND miniature STLs. Sold as digital download directly on the site (PayPal / card checkout).
 
 This site is the official catalog for DND Anime Miniatures — the dedicated source for anime DND miniature STL files. Every character is hand-positioned for tabletop RPG use: D&D, Pathfinder, Frostgrave, OPR, Star Wars Legion, etc. Each character page includes a suggested D&D class / NPC role plus full manga/anime lore so DMs and players can integrate them into campaigns.
 
@@ -16,7 +16,7 @@ This site is the official catalog for DND Anime Miniatures — the dedicated sou
 
 ## Key Facts
 
-- **Total products**: 59
+- **Total products**: 74
 - **Primary positioning**: DND anime miniature STL (digital download) → One Piece anime/manga character (current focus, expanding)
 - **Categories**: Straw Hat Crew, Baroque Works, Drum Island, Blackbeard Pirates, Alabasta Royals, Marines, Little Garden, plus 5 multi-character bundles
 - **Price range**: $4 (basic individual) to $35 (largest bundle), all USD
@@ -42,12 +42,18 @@ Each entry: title → product page URL → price → key abilities → suggested
 - [Tony Tony Chopper · Heavy Point STL · DND Anime Miniature — One Piece 3D Print | Human Form · Pre-Timeskip](https://www.dndanimeminiatures.com/product/chopper-heavy-point/) — $12.00 · Abilities: Heavy Point — humanoid form maximizing strength · DND: Barbarian (Path of the Beast) or Druid Circle of the Moon "Beast" wild shape variant
 - [Tony Tony Chopper · Brain Point STL · DND Anime Miniature — One Piece 3D Print | Pre-Timeskip · Straw Hat Doctor](https://www.dndanimeminiatures.com/product/chopper-normal/) — $8.00 · Abilities: Hito Hito no Mi (Human-Human Fruit · DND: Druid (Circle of the Moon) — Rumble Ball is just Wild Shape with extra steps
 - [Tony Tony Chopper · Guard Point STL · DND Anime Miniature — One Piece 3D Print | Defensive Form · Pre-Timeskip](https://www.dndanimeminiatures.com/product/chopper-guard-point/) — $8.00 · Abilities: Guard Point — defensive furball form · DND: Druid Wild-Shape variant focused on defense (high HP, low movement)
+- [One Piece STL Jinbe 3D Print - DND Anime Miniature Knight of the Sea Fish-Man Statue](https://www.dndanimeminiatures.com/product/jinbe/) — $4.00
 - [Monkey D. Luffy STL · DND Anime Miniature — One Piece 3D Print | Pre-Timeskip · Straw Hat Captain](https://www.dndanimeminiatures.com/product/luffy/) — $4.00 · Abilities: Gomu Gomu no Mi (rubber-body Paramecia) · DND: Monk (Way of the Open Hand) for stretchy unarmed combat, or Barbarian (Path of the Wild Magic) for Gear transformations
 - [Nami STL · DND Anime Miniature — One Piece 3D Print | Pre-Timeskip · Straw Hat Navigator](https://www.dndanimeminiatures.com/product/nami/) — $4.00 · Abilities: Clima Tact (weather-control staff) · DND: Rogue (Inquisitive or Thief) multiclassed into Sorcerer (Storm) — the Clima Tact channels lightning, cyclone, mirage and heat illusions
+- [One Piece STL Nami 3D Print - DND Anime Miniature Navigator Clima Tact Shipwreck Statue](https://www.dndanimeminiatures.com/product/nami-clima-tact/) — $4.00
+- [One Piece STL Nami Treasure Hunter 3D Print - DND Anime Miniature Navigator Statue](https://www.dndanimeminiatures.com/product/nami-treasure-hunter/) — $4.00
+- [One Piece STL Nico Robin 3D Print - DND Anime Miniature Straw Hat Archaeologist Statue](https://www.dndanimeminiatures.com/product/nico-robin-ruins/) — $4.00
 - [Roronoa Zoro STL · DND Anime Miniature — One Piece 3D Print | Pre-Timeskip · Straw Hat Swordsman](https://www.dndanimeminiatures.com/product/roronoa-zoro/) — $4.00 · Abilities: Santoryu (Three-Sword Style) · DND: Fighter (Battle Master) or Samurai subclass — the three-sword style is a custom Two-Weapon Fighting + bonus weapon feat
 - [Sanji STL · DND Anime Miniature — One Piece 3D Print | Pre-Timeskip · Black Leg · Straw Hat Cook](https://www.dndanimeminiatures.com/product/sanji/) — $4.00 · Abilities: Black Leg Style (legs-only kicks) · DND: Monk (Way of the Kensei with leg as the kensei weapon) or Fighter with Tavern Brawler — chivalric chef who refuses to strike women
+- [One Piece STL Sanji 3D Print - DND Anime Miniature Black Leg Cook Baratie Diorama Statue](https://www.dndanimeminiatures.com/product/sanji-baratie/) — $4.00
 - [Tony Tony Chopper · Kung Fu Point STL · DND Anime Miniature — One Piece 3D Print | Slim Form · Pre-Timeskip](https://www.dndanimeminiatures.com/product/chopper-kung-fu-point/) — $8.00 · Abilities: Kung Fu Point — slim acrobatic form · DND: Monk (Way of the Drunken Master) — perfect for a humanoid Druid/Monk multiclass build with shapeshifting flavor
 - [Usopp STL · DND Anime Miniature — One Piece 3D Print | Pre-Timeskip · Straw Hat Sniper](https://www.dndanimeminiatures.com/product/usopp/) — $4.00 · Abilities: Slingshot mastery · DND: Rogue (Scout) or Ranger (Gloom Stalker) with a Gunner-style ranged build
+- [One Piece STL Roronoa Zoro 3D Print - DND Anime Miniature Three Sword Style Ronin Statue](https://www.dndanimeminiatures.com/product/zoro-wano/) — $4.00
 
 ### Baroque Works Agents
 - [Lasso · Mr. 4's Pet STL · DND Anime Miniature — One Piece 3D Print | Baroque Works · Living Gun](https://www.dndanimeminiatures.com/product/lasso-baroque-works/) — $4.00 · Inu Inu no Mi Model: Dachshund (basset-hound shape rifle that fires cannonballs) · DND: Living magical weapon or sentient object
