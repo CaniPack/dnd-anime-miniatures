@@ -89,6 +89,7 @@ curl -X POST "https://api.indexnow.org/IndexNow" \
     "https://yourdomain.com/product/lapahn/",
     "https://yourdomain.com/product/lasso-baroque-works/",
     "https://yourdomain.com/product/little-garden-bundle/",
+    "https://yourdomain.com/product/lucky-roo/",
     "https://yourdomain.com/product/luffy/",
     "https://yourdomain.com/product/nico-robin/",
     "https://yourdomain.com/product/miss-double-finger/",
@@ -121,6 +122,7 @@ curl -X POST "https://api.indexnow.org/IndexNow" \
     "https://yourdomain.com/product/sir-crocodile/",
     "https://yourdomain.com/product/chopper-kung-fu-point/",
     "https://yourdomain.com/product/smoker/",
+    "https://yourdomain.com/product/straw-hat-hero/",
     "https://yourdomain.com/product/tashigi/",
     "https://yourdomain.com/product/teach-pre-timeskip/",
     "https://yourdomain.com/product/trafalgar-law-statue/",
@@ -169,7 +171,7 @@ The above gets you indexed. Now you need links and traffic for rankings:
 
 ## Reference files
 
-- `sitemap.xml` — all 75 URLs with lastmod, image metadata, license info
+- `sitemap.xml` — all 77 URLs with lastmod, image metadata, license info
 - `robots.txt` — explicit allows for AI crawlers (GPTBot, ClaudeBot, PerplexityBot, Google-Extended, Applebot, etc.)
 - `llms.txt` — AI-friendly catalog with character lore + D&D class suggestions
 - `humans.txt` — site metadata for curious humans

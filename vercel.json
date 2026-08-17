@@ -316,6 +316,16 @@
       "permanent": true
     },
     {
+      "source": "/product/city-guard-recruit",
+      "destination": "https://www.dndminiaturestl.com/product/city-guard-recruit/",
+      "permanent": true
+    },
+    {
+      "source": "/product/city-guard-recruit/",
+      "destination": "https://www.dndminiaturestl.com/product/city-guard-recruit/",
+      "permanent": true
+    },
+    {
       "source": "/product/cleric-flamekeeper",
       "destination": "https://www.dndminiaturestl.com/product/cleric-flamekeeper/",
       "permanent": true
@@ -466,6 +476,16 @@
       "permanent": true
     },
     {
+      "source": "/product/kobold-blade-dancer",
+      "destination": "https://www.dndminiaturestl.com/product/kobold-blade-dancer/",
+      "permanent": true
+    },
+    {
+      "source": "/product/kobold-blade-dancer/",
+      "destination": "https://www.dndminiaturestl.com/product/kobold-blade-dancer/",
+      "permanent": true
+    },
+    {
       "source": "/product/kobold-ranger-emberfang",
       "destination": "https://www.dndminiaturestl.com/product/kobold-ranger-emberfang/",
       "permanent": true
@@ -473,6 +493,16 @@
     {
       "source": "/product/kobold-ranger-emberfang/",
       "destination": "https://www.dndminiaturestl.com/product/kobold-ranger-emberfang/",
+      "permanent": true
+    },
+    {
+      "source": "/product/kobold-shaman-emberclaw",
+      "destination": "https://www.dndminiaturestl.com/product/kobold-shaman-emberclaw/",
+      "permanent": true
+    },
+    {
+      "source": "/product/kobold-shaman-emberclaw/",
+      "destination": "https://www.dndminiaturestl.com/product/kobold-shaman-emberclaw/",
       "permanent": true
     },
     {
