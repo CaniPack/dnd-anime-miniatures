@@ -146,16 +146,6 @@
       "permanent": true
     },
     {
-      "source": "/product/nico-robin",
-      "destination": "/product/nico-robin-ruins/",
-      "permanent": true
-    },
-    {
-      "source": "/product/nico-robin/",
-      "destination": "/product/nico-robin-ruins/",
-      "permanent": true
-    },
-    {
       "source": "/product/amethyst-archmage",
       "destination": "https://www.dndminiaturestl.com/product/amethyst-archmage/",
       "permanent": true
