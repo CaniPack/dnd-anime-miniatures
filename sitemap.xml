@@ -103,6 +103,30 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.dndanimeminiatures.com/about/</loc>
+    <lastmod>2026-08-22</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://www.dndanimeminiatures.com/how-it-works/</loc>
+    <lastmod>2026-08-22</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://www.dndanimeminiatures.com/license/</loc>
+    <lastmod>2026-08-22</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://www.dndanimeminiatures.com/refunds/</loc>
+    <lastmod>2026-08-22</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
     <loc>https://www.dndanimeminiatures.com/custom-anime-miniatures/</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>

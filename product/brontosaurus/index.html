@@ -266,6 +266,8 @@ img { display: block; max-width: 100%; height: auto; }
 .faq__item summary::after { content: '+'; position: absolute; right: 20px; top: 50%; transform: translateY(-50%); font-size: 22px; color: var(--accent); }
 .faq__item[open] summary::after { content: '−'; }
 .faq__item p { padding: 0 20px 16px; color: var(--text-dim); font-size: 14px; }
+.pp-guarantee { font-size: 12.5px; color: var(--text-dim); margin: 10px 0 2px; line-height: 1.6; max-width: 360px; }
+.pp-guarantee a { color: var(--accent); }
 .card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; transition: transform .2s, border-color .2s; }
 .card:hover { transform: translateY(-4px); border-color: var(--accent); }
 .card__img-wrap { position: relative; aspect-ratio: 1/1; overflow: hidden; background: #0a0a0a; }
@@ -368,6 +370,7 @@ img { display: block; max-width: 100%; height: auto; }
     <div class="pp-wrap" id="buy">
       <div class="pp-divider">Pay with PayPal or card — instant download</div>
       <div id="paypal-button-container"></div>
+      <p class="pp-guarantee">&#128737; Covered by PayPal Buyer Protection · If a file fails to print, we fix it or refund you — <a href="/refunds/">our promise</a>.</p>
       <button type="button" class="cta-btn" style="cursor:pointer;display:block;width:100%;max-width:360px;margin-top:10px;text-align:center;font-size:14px" data-add-cart data-slug="brontosaurus" data-title="Brontosaurus · Little Garden Dinosaur" data-price="8.00" data-img="/images/brontosaurus-1-t.webp?v=ze70e0">&#128722; Add to cart</button>
       <div id="pp-success" class="pp-success" hidden>
         <h3 id="pp-title">✅ Payment received — thank you!</h3>
@@ -503,7 +506,7 @@ If you have any issues printing or need adjustments, message us and we&#39;ll he
 </section>
 
 <footer class="footer">
-  <p>© 2026 DND Anime Miniatures · <a href="/">All models</a> · <a href="https://www.dndminiaturestl.com/">100% DnD fantasy minis</a> · <a href="mailto:info@dndanimeminiatures.com">info@dndanimeminiatures.com</a> · Fan-art inspired by Eiichiro Oda's work. No official affiliation with Toei/Shueisha.</p>
+  <p>© 2026 DND Anime Miniatures · <a href="/">All models</a> · <a href="/about/">About</a> · <a href="/license/">License</a> · <a href="/refunds/">Refunds</a> · <a href="https://www.dndminiaturestl.com/">100% DnD fantasy minis</a> · <a href="mailto:info@dndanimeminiatures.com">info@dndanimeminiatures.com</a> · Fan-art inspired by Eiichiro Oda's work. No official affiliation with Toei/Shueisha.</p>
 </footer>
 
 <script>

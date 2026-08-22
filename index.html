@@ -292,6 +292,9 @@ img { display: block; max-width: 100%; height: auto; }
 .faq__item summary::after { content: '+'; position: absolute; right: 22px; top: 50%; transform: translateY(-50%); font-size: 24px; color: var(--accent); transition: transform .15s; }
 .faq__item[open] summary::after { transform: translateY(-50%) rotate(45deg); }
 .faq__item p { padding: 0 22px 18px; color: var(--text-dim); font-size: 15px; }
+.trustbar { border-bottom: 1px solid var(--border); background: var(--bg-card); }
+.trustbar__inner { max-width: var(--max); margin: 0 auto; padding: 12px 20px; display: flex; justify-content: center; gap: 28px; flex-wrap: wrap; font-size: 12.5px; color: var(--text-dim); }
+.trustbar__inner b { color: var(--text); font-weight: 600; }
 </style>
 
 <!-- Google Analytics 4 -->
@@ -329,6 +332,16 @@ img { display: block; max-width: 100%; height: auto; }
     <button class="cart-btn" id="cart-fab" aria-label="Open cart">&#128722;<span class="cart-fab__count" id="cart-count" hidden>0</span></button>
   </div>
 </header>
+
+<div class="trustbar">
+  <div class="trustbar__inner">
+    <span>&#128737; <b>Secure checkout</b> · PayPal Buyer Protection</span>
+    <span>&#127758; <b>Players in 4 countries</b> · US, UK, Spain &amp; Chile</span>
+    <span>&#9889; <b>Instant download</b> · files in minutes</span>
+    <span>&#128424; <b>Sell your prints</b> · commercial license included</span>
+    <span>&#9993; <b>Real human support</b> · info@dndanimeminiatures.com</span>
+  </div>
+</div>
 
 <main id="top">
 
@@ -2283,6 +2296,7 @@ The prehistoric island and its inhabitants: giants Dorry and Brogy alongside the
 <footer class="footer">
   <p>Browse collections: <a href="/one-piece-stl/">One Piece Miniature STL</a> · <a href="/straw-hat-crew-stl/">Straw Hat Crew STL</a> · <a href="/baroque-works-stl/">Baroque Works STL</a> · <a href="/drum-island-stl/">Drum Island STL</a> · <a href="/blackbeard-pirates-stl/">Blackbeard Pirates STL</a> · <a href="/little-garden-stl/">Little Garden &amp; Creatures STL</a> · <a href="/red-hair-pirates-stl/">Red Hair Pirates STL</a> · <a href="/yonko-stl/">Yonko &amp; Emperors STL</a> · <a href="/warlords-stl/">Warlords &amp; Supernovas STL</a> · <a href="/alabasta-stl/">Alabasta Royals STL</a> · <a href="/marines-stl/">Marines STL</a> · <a href="/bundles/">One Piece STL Bundles</a></p>
   <p>Looking for 100% DnD fantasy minis — orcs, bandits, minotaurs, demons? Visit our sister site <a href="https://www.dndminiaturestl.com/">DnD Miniatures STL</a>.</p>
+  <p><a href="/about/">About</a> · <a href="/how-it-works/">How buying works</a> · <a href="/license/">License</a> · <a href="/refunds/">Refunds</a></p>
   <p>© 2026 DND Anime Miniatures · <a href="mailto:info@dndanimeminiatures.com">info@dndanimeminiatures.com</a> · Fan-art inspired by Eiichiro Oda's work. No official affiliation with Toei/Shueisha.</p>
 </footer>
 
